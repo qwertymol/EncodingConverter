@@ -13,7 +13,7 @@ int main (int argc, char *argv[])
     // a - file, b - from866, c - outfile
 
     if (argc < 3) {
-        printf("wrong parameters number");
+        printf("wrong parameters number\n");
         showUsage (argv[0]);
     } else if (argc == 3 && strcmp (argv[1], "--file") != 1) { // a
         e->encode (argv[2]);
