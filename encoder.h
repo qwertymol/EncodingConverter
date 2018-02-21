@@ -1,6 +1,8 @@
 #ifndef ENCODER_H
 #define ENCODER_H
 
+#include "encoding.h"
+
 class Encoder
 {
 public:
@@ -9,6 +11,7 @@ public:
 
 private:
     static Encoder *instance;
+    Encoding *e;
 
     Encoder ();
 };

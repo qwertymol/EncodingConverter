@@ -25,7 +25,6 @@ void Encoder::encode (const char *file, bool from866, const char *outFile)
 
     QByteArray buf = f.readAll ();
     QByteArray bufOut;
-    Encoding *e = Encoding::getInst ();
 
     for(int i = 0; i < buf.length(); i++) {
         char c = buf[i];
@@ -41,5 +40,5 @@ void Encoder::encode (const char *file, bool from866, const char *outFile)
 
 Encoder::Encoder ()
 {
-
+    e = Encoding::getInst();
 }
